@@ -1,1 +1,55 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bitter:ital,wght@0,100..900;1,100..900&family=Cabin:ital,wght@0,400..700;1,400..700&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mukta:wght@200;300;400;500;600;700;800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+:root {
+  /* ### Primary */
+  --perimary-blue-100: hsl(206, 94%, 87%);
+  --perimary-blue-200: hsl(228, 100%, 84%);
+  --perimary-blue-300: hsl(243, 100%, 62%);
+  --perimary-blue-400: hsl(213, 96%, 18%);
+  --perimary-red-100: hsl(354, 84%, 57%);
+
+  /* ### Neutral */
+  --neutral-white-100: hsl(0, 0%, 100%);
+  --neutral-gray-100: hsl(231, 100%, 99%);
+  --neutral-gray-200: hsl(217, 100%, 97%);
+  --neutral-gray-300: hsl(229, 24%, 87%);
+  --neutral-gray-400: hsl(231, 11%, 63%);
+
+  --fs-para: 16px;
+
+  --ff: "Ubuntu", sans-serif;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-700: 700;
+
+  --red-to-pink-to-purple-vertical-gradient: linear-gradient(
+    180deg,
+    var(--orange-red) 0%,
+    var(--vivid-pink) 50%,
+    var(--electric-violet) 100%
+  );
+
+  --red-to-pink-to-purple-horizontal-gradient: linear-gradient(
+    90deg,
+    var(--orange-red) 0%,
+    var(--vivid-pink) 50%,
+    var(--electric-violet) 100%
+  );
+
+  --pill-accent: var(--bright-blue);
+
+  font-family: "Ubuntu", sans-serif;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--neutral-gray-200);
+}

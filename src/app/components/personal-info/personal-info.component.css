@@ -1,0 +1,120 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  margin-inline: auto;
+  background-color: var(--neutral-white-100);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.steps {
+  background-image: url(../../../assets/images/bg-sidebar-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 500px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: flex-start;
+  /* margin-inline: auto; */
+  padding: 35px 30px;
+  border-radius: 10px;
+  gap: 20px;
+  /* text-align: left; */
+}
+.stepNumberContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+}
+.stepNumber {
+  color: var(--neutral-gray-400);
+}
+.number {
+  color: var(--neutral-white-100);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.number.active {
+    background-color: var(--neutral-blue-100);
+    color: black;
+}
+label {
+  display: block;
+}
+p {
+  font-size: var(--fs-para);
+}
+h3 {
+  color: var(--neutral-white-100);
+}
+
+/*form */
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;    
+  width: 70%;
+  height: 500px;
+  padding-top: 35px;
+}
+
+.info form {
+  display: flex;
+  flex-direction: column;
+  /* margin-inline: auto; */
+  gap: 20px;
+  width: 83%;
+  
+}
+.info h1 {
+  color: var(--perimary-blue-400);
+}
+
+.info > p {
+  color: var(--neutral-gray-400);
+}
+.info label {
+  font-size: 14px;
+  margin-bottom: 7px;
+}
+.info input {
+  padding-left: 10px;
+  border: 1px solid var(--neutral-gray-400);
+  border-radius: 10px;
+  font-size: var(--fs-para);
+  width: 100%;
+  height: 40px;
+  font-weight: var(--fw-700);
+}
+
+.btn{
+    background-color: var(--perimary-blue-400);
+    color: var(--neutral-white-100);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    /* font-size: var(--fs-para); */
+    width: 100px;
+    cursor: pointer;
+    float: right;
+}

@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="steps">
+    <div class="stepNumberContainer">
+      <div class="number">1</div>
+      <div>
+        <p class="stepNumber">Step 1</p>
+        <h3>Your info</h3>
+      </div>
+    </div>
+    <div class="stepNumberContainer">
+      <div class="number">2</div>
+      <div>
+        <p class="stepNumber">Step 2</p>
+        <h3>Select plan</h3>
+      </div>
+    </div>
+    <div class="stepNumberContainer">
+      <div class="number">3</div>
+      <div>
+        <p class="stepNumber">Step 3</p>
+        <h3>Add-ons</h3>
+      </div>
+    </div>
+    <div class="stepNumberContainer">
+      <div class="number">4</div>
+      <div>
+        <p class="stepNumber">Step 4</p>
+        <h3>Summary</h3>
+      </div>
+    </div>
+  </div>
+  <div class="info">
+    <h1>Personal info</h1>
+    <p>Please provide your name, email address, and phone number.</p>
+
+    <form action="">
+      <div>
+        <label for="">Name</label>
+        <input type="text" placeholder="e.g. Stephen King" />
+      </div>
+      <div>
+        <label for="">Email Address </label>
+        <input type="email" placeholder="e.g. stephenking@lorem.com" />
+      </div>
+      <div>
+        <label for="">Phone Number </label>
+        <input type="tel" placeholder="e.g. +1 234 567 890" />
+      </div>
+      <div>
+        <button type="submit" class="btn" [routerLink]="['/select-plan']" routerLinkActive="router-link-active" >Next Step</button>
+      </div>
+    </form>
+  </div>
+</div>
