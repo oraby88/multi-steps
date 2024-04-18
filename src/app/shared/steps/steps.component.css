@@ -1,0 +1,227 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 100%; */
+  }
+  
+  .container1 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    /* align-items: center; */
+    border-radius: 0.5rem;
+    overflow: hidden;
+    width: 900px;
+    gap: 10px;
+    height: 600px;
+    /* margin: 0 1rem; */
+    background-color: var(--neutral-white-100);
+    padding: 10px;
+  
+    /* position: absolute;
+    left: 50%;
+    top: 50%; 
+    transform: translate(-50%, -50%); */
+    grid-template-areas:
+      "step info"
+      "step btn";
+  }
+  
+  .steps {
+    background-image: url(../../../assets/images/bg-sidebar-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 100%;
+    /* width: 30%; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: flex-start;
+    /* margin-inline: auto; */
+    padding: 35px 30px;
+    border-radius: 10px;
+    gap: 20px;
+    /* text-align: left; */
+  
+    grid-area: step;
+  }
+  .stepNumberContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+  }
+  .stepNumber {
+    color: var(--neutral-gray-400);
+  }
+  .number {
+    color: var(--neutral-white-100);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
+  .activeNum {
+    background-color: var(--neutral-gray-200);
+    border: 1px solid var(--perimary-blue-300);
+    color: black;
+  }
+  
+  label {
+    display: block;
+  }
+  p {
+    font-size: var(--fs-para);
+  }
+  h3 {
+    color: var(--neutral-white-100);
+  }
+  
+  /*form */
+  
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    /* width: 70%; */
+    height: 100%;
+    padding-top: 35px;
+    margin-inline: auto;
+    grid: info;
+    /* position: relative; */
+  }
+  
+  .info form {
+    display: flex;
+    flex-direction: column;
+    /* margin-inline: auto; */
+    gap: 20px;
+    width: 100%;
+  }
+  .info h1 {
+    color: var(--perimary-blue-400);
+  }
+  
+  .info > p {
+    color: var(--neutral-gray-400);
+  }
+  .info label {
+    font-size: 14px;
+    margin-bottom: 7px;
+  }
+  .info input {
+    padding-left: 10px;
+    border: 1px solid var(--neutral-gray-400);
+    border-radius: 10px;
+    font-size: 14px;
+    width: 100%;
+    height: 40px;
+    font-weight: var(--fw-500);
+    /* color: var(--neutral-blue-100); */
+  }
+  
+  .buttonContainer {
+    grid-area: btn;
+    margin-inline: auto;
+    display: flex;
+    width: 100%;
+    /* height: 50px; */
+    justify-content: flex-end;
+    /* margin-right: 50px; */
+    position: relative;
+    right: 12%;
+  }
+  .btn {
+    background-color: var(--perimary-blue-400);
+    color: var(--neutral-white-100);
+    padding: 10px 20px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    /* font-size: var(--fs-para); */
+    width: 100px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  
+  @media screen and (max-width: 1200px) and (min-width: 992px) {
+  }
+  @media screen and (max-width: 992px) and (min-width: 786px) {
+    .card-article {
+      width: 45%;
+    }
+  }
+  @media screen and (max-width: 786px) and (min-width: 600px) {
+  }
+  @media screen and (max-width: 700px) {
+    .container {
+      align-items: flex-start;
+    }
+    .container1 {
+      grid-template-columns: 1fr;
+      padding: 0;
+      border-radius: 0;
+      background-color: var(--neutral-gray-200);
+      height: 100vh;
+      grid-template-areas:
+        "step"
+        "info"
+        "btn";
+        justify-content: space-between;
+    }
+    .steps {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0;
+      background-image: url(../../../assets/images/bg-sidebar-mobile.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: bottom;
+      align-items: flex-start;
+      height: 200px;
+    }
+    .stepWord {
+      display: none;
+    }
+  
+    .info {
+      background-color: var(--neutral-white-100);
+      padding: 20px;
+      border-radius: 10px;
+      margin: 0 15px;
+      justify-content: center;
+      align-items: center;
+      height: 450px;
+      /* width: 100%; */
+      position: absolute;
+      top: 100px;
+      left: 0;
+      right: 0;
+    }
+    .info input {
+      border-radius: 5px;
+    }
+    .buttonContainer{
+  
+      align-items: flex-end;
+      background-color: white;
+      padding-bottom: 20px;
+      padding-right: 20px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 90px;
+    }
+  }
+  
