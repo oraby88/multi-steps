@@ -1,78 +1,44 @@
-<div class="container">
-  <div class="container1">
-    <div class="steps">
-      <div class="stepNumberContainer">
-        <div class="number" [routerLink]="['/personal-info']" [routerLinkActive]="'activeNum'">1</div>
-        <div class="stepWord">
-          <p class="stepNumber">Step 1</p>
-          <h3>Your info</h3>
+
+<div class="plan-container">
+  <div class="info">
+    <h1>Select your plan</h1>
+    <p>You have the option of monthly or yearly billing.</p>
+
+    <div class="cardsContainer">
+      <div class="cards">
+        <div class="card">
+          <img src="../../../assets/images/icon-arcade.svg" alt="" />
+          <div class="cardInfo">
+            <h4>Arcade</h4>
+            <p>$9/mo</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../../../assets/images/icon-advanced.svg" alt="" />
+          <div class="cardInfo">
+            <h4>Advanced</h4>
+            <p>$12/mo</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../../../assets/images/icon-pro.svg" alt="" />
+          <div class="cardInfo">
+            <h4>Pro</h4>
+            <p>$15/mo</p>
+          </div>
         </div>
       </div>
-      <div class="stepNumberContainer">
-        <div class="number" [routerLink]="['/select-plan']" [routerLinkActive]="'activeNum'">2</div>
-        <div class="stepWord">
-          <p class="stepNumber">Step 2</p>
-          <h3>Select plan</h3>
-        </div>
-      </div>
-      <div class="stepNumberContainer">
-        <div class="number">3</div>
-        <div class="stepWord">
-          <p class="stepNumber">Step 3</p>
-          <h3>Add-ons</h3>
-        </div>
-      </div>
-      <div class="stepNumberContainer">
-        <div class="number">4</div>
-        <div class="stepWord">
-          <p class="stepNumber">Step 4</p>
-          <h3>Summary</h3>
-        </div>
+
+      <div class="checkLine">
+        <h4>Monthly</h4>
+        <input type="checkbox" class="toggle" id="toggle" name="Agree" />
+        <label for="toggle"></label>
+        <h4>Yearly</h4>
       </div>
     </div>
-
-    <div class="info">
-      <h1>Select your plan</h1>
-      <p>You have the option of monthly or yearly billing.</p>
-
-      <div class="cardsContainer">
-        <div class="cards">
-          <div class="card">
-            <img src="../../../assets/images/icon-arcade.svg" alt="" />
-            <div class="cardInfo">
-              <h4>Arcade</h4>
-              <p>$9/mo</p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="../../../assets/images/icon-advanced.svg" alt="" />
-            <div class="cardInfo">
-              <h4>Advanced</h4>
-              <p>$12/mo</p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="../../../assets/images/icon-pro.svg" alt="" />
-            <div class="cardInfo">
-              <h4>Pro</h4>
-              <p>$15/mo</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="checkLine">
-          <h4>Monthly</h4>
-          <input type="checkbox" class="toggle" id="toggle" name="Agree" />
-          <label for="toggle"></label>
-          <h4>Yearly</h4>
-        </div>
-      </div>
-
-      
-    </div>
-    <div class="buttonContainer">
-        <a class="backLink" routerLink="/steps">Go Back</a>
-        <button class="btn" routerLink="/">Next Step</button>
-      </div>
+  </div>
+  <div class="buttonContainer">
+    <a class="backLink" routerLink="/personal-info">Go Back</a>
+    <button class="btn" routerLink="/add-ons">Next Step</button>
   </div>
 </div>

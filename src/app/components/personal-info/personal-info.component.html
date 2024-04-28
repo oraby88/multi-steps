@@ -1,5 +1,4 @@
-
-    <!-- <div class="steps">
+<!-- <div class="steps">
       <div class="stepNumberContainer">
         <div class="number" [routerLink]="['/personal-info']" [routerLinkActive]="'activeNum'">1</div>
         <div class="stepWord">
@@ -29,34 +28,38 @@
         </div>
       </div>
     </div> -->
-    <div class="info">
-      <h1>Personal info</h1>
-      <p>Please provide your name, email address, and phone number.</p>
+<div class="personal-info-container">
+  <div class="info">
+    <h1>Personal info</h1>
+    <p>Please provide your name, email address, and phone number.</p>
 
-      <form action="">
-        <div>
-          <label for="">Name</label>
-          <input type="text" placeholder="e.g. Stephen King" name="Name" />
-        </div>
-        <div>
-          <label for="">Email Address </label>
-          <input type="email" placeholder="e.g. stephenking@lorem.com" name="email" />
-        </div>
-        <div>
-          <label for="">Phone Number </label>
-          <input type="tel" placeholder="e.g. +1 234 567 890" name="phone" />
-        </div>
-        
-      </form>
-    </div>
-    <div class="buttonContainer">
-      <button
-        type="submit"
-        class="btn"
-        [routerLink]="['/select-plan']"
-        routerLinkActive="router-link-active"
-        
-      >
-        Next Step
-      </button>
-    </div>
+    <form action="">
+      <div>
+        <label for="">Name</label>
+        <input type="text" placeholder="e.g. Stephen King" name="Name" />
+      </div>
+      <div>
+        <label for="">Email Address </label>
+        <input
+          type="email"
+          placeholder="e.g. stephenking@lorem.com"
+          name="email"
+        />
+      </div>
+      <div>
+        <label for="">Phone Number </label>
+        <input type="tel" placeholder="e.g. +1 234 567 890" name="phone" />
+      </div>
+    </form>
+  </div>
+  <div class="buttonContainer">
+    <button
+      type="submit"
+      class="btn"
+      [routerLink]="['/select-plan']"
+      routerLinkActive="router-link-active"
+    >
+      Next Step
+    </button>
+  </div>
+</div>

@@ -1,88 +1,9 @@
-.container {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* width: 100%; */
-}
 
-.container1 {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  justify-content: center;
-  /* align-items: center; */
-  border-radius: 0.5rem;
-  overflow: hidden;
-  width: 900px;
-  gap: 10px;
-  height: 600px;
-  /* margin: 0 1rem; */
-  background-color: var(--neutral-white-100);
-  padding: 10px;
-
-  /* position: absolute;
-  left: 50%;
-  top: 50%; 
-  transform: translate(-50%, -50%); */
-  grid-template-areas:
-    "step info"
-    "step btn";
-}
-
-.steps {
-  background-image: url(../../../assets/images/bg-sidebar-desktop.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
-  height: 100%;
-  /* width: 30%; */
+.personal-info-container{
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  align-items: flex-start;
-  /* margin-inline: auto; */
-  padding: 35px 30px;
-  border-radius: 10px;
-  gap: 20px;
-  /* text-align: left; */
-
-  grid-area: step;
-}
-.stepNumberContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-.number {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid;
-}
-.stepNumber {
-  color: var(--neutral-gray-400);
-}
-.number {
-  color: var(--neutral-white-100);
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-}
-.activeNum {
-  background-color: var(--neutral-gray-200);
-  border: 1px solid var(--perimary-blue-300);
-  color: black;
-}
-
-label {
-  display: block;
-}
-p {
-  font-size: var(--fs-para);
-}
-h3 {
-  color: var(--neutral-white-100);
+  justify-content: space-between;
+  height: 100%;
 }
 
 /*form */
@@ -94,9 +15,9 @@ h3 {
   gap: 20px;
   /* width: 70%; */
   height: 100%;
-  padding-top: 35px;
+  /* padding-top: 35px; */
   margin-inline: auto;
-  grid: info;
+  /* grid: info; */
   /* position: relative; */
 }
 
@@ -130,15 +51,15 @@ h3 {
 }
 
 .buttonContainer {
-  grid-area: btn;
-  margin-inline: auto;
+  /* grid-area: btn; */
+  /* margin-inline: auto; */
   display: flex;
   width: 100%;
   /* height: 50px; */
   justify-content: flex-end;
   /* margin-right: 50px; */
-  position: relative;
-  right: 12%;
+  /* position: relative; */
+  /* right: 12%; */
 }
 .btn {
   background-color: var(--perimary-blue-400);
@@ -146,13 +67,18 @@ h3 {
   padding: 10px 20px;
   height: 50px;
   border: none;
-  border-radius: 5px;
-  /* font-size: var(--fs-para); */
-  width: 100px;
+  border-radius: 10px;
+  font-size: 14px;
+  width: 120px;
   cursor: pointer;
   float: right;
+  font-weight: var(--fw-600);
+  /* z-index: 999;
+  position: absolute;
+  top: 94%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
 }
-
 
 @media screen and (max-width: 1200px) and (min-width: 992px) {
 }
@@ -177,7 +103,7 @@ h3 {
       "step"
       "info"
       "btn";
-      justify-content: space-between;
+    justify-content: space-between;
   }
   .steps {
     flex-direction: row;
@@ -212,8 +138,7 @@ h3 {
   .info input {
     border-radius: 5px;
   }
-  .buttonContainer{
-
+  .buttonContainer {
     align-items: flex-end;
     background-color: white;
     padding-bottom: 20px;

@@ -1,0 +1,157 @@
+
+
+.plan-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+  
+  /* information */
+  
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    /* width: 80%; */
+    /* margin-inline: auto; */
+    /* height: 100%;  */
+    grid-area: info;
+  }
+  
+  .info h1,
+  h4 {
+    color: var(--perimary-blue-400);
+  }
+  
+  .info p {
+    color: var(--neutral-gray-400);
+  }
+  
+  /* cards */
+  
+  .cardsContainer {
+    width: 100%;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .card {
+    border: 1px solid var(--neutral-gray-300);
+    border-radius: 10px;
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-between;
+  }
+  .card:focus,
+  .card:hover {
+    background-color: var(--neutral-gray-200);
+    border: 1px solid var(--perimary-blue-300);
+  }
+  .active {
+    background-color: var(--neutral-gray-200);
+    border: 1px solid var(--perimary-blue-300);
+  }
+  
+
+  .card-info-container{
+    display: flex;
+    gap: 20px;
+  }
+  .card-info-container h4{
+    color: var(--perimary-blue-400);
+  }
+  
+  
+
+  .buttonContainer {
+    grid-area: btn;
+    margin-inline: auto;
+    display: flex;
+  
+    width: 100%;
+    /* height: 50px; */
+    justify-content: space-between;
+    align-items: center;
+    /* margin-right: 50px; */
+    /* position: relative; */
+  }
+  
+  .btn {
+    background-color: var(--perimary-blue-400);
+    color: var(--neutral-white-100);
+    padding: 10px 20px;
+    border: none;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 120px;
+    cursor: pointer;
+    float: right;
+    font-weight: var(--fw-600);
+  }
+  
+  .backLink {
+    text-decoration: none;
+    color: var(--neutral-gray-400);
+    font-weight: var(--fw-500);
+  }
+  .backLink:hover {
+    color: var(--perimary-blue-400);
+  }
+  
+  @media screen and (max-width: 700px) {
+    
+  
+    .info {
+      background-color: var(--neutral-white-100);
+      padding: 20px;
+      border-radius: 10px;
+      margin: 0 15px;
+      justify-content: center;
+      /* align-items: center; */
+      /* height: 600px; */
+      /* width: 100%; */
+      position: absolute;
+      top: 100px;
+      left: 0;
+      right: 0;
+    }
+  
+    .cardsContainer {
+      width: 100%;
+    }
+    .cards {
+      grid-template-columns: 1fr;
+    }
+    .card {
+      flex-direction: row;
+      height: 70px;
+      width: 100%;
+      justify-content: flex-start;
+      gap: 10px; 
+    }
+  
+    .buttonContainer {
+      background-color: white;
+      padding: 20px;
+      justify-content: space-between;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 90px;
+      grid-area: btn;
+    }
+  }
+  

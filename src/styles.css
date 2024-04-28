@@ -18,10 +18,12 @@
   --neutral-gray-400: hsl(231, 11%, 63%);
 
   --fs-para: 16px;
+  --fs-normal: 14px
 
   --ff: "Ubuntu", sans-serif;
   --fw-400: 400;
   --fw-500: 500;
+  --fw-600: 600;
   --fw-700: 700;
 
   --red-to-pink-to-purple-vertical-gradient: linear-gradient(

@@ -1,38 +1,61 @@
-
 <div class="container">
-    <div class="container1">
-      <div class="steps">
-        <div class="stepNumberContainer">
-          <div class="number" [routerLink]="['/personal-info']" [routerLinkActive]="'activeNum'">1</div>
-          <div class="stepWord">
-            <p class="stepNumber">Step 1</p>
-            <h3>Your info</h3>
-          </div>
+  <div class="container1">
+    <div class="steps">
+      <div class="stepNumberContainer">
+        <div
+          class="number"
+          [routerLink]="['/personal-info']"
+          [routerLinkActive]="'activeNum'"
+        >
+          1
         </div>
-        <div class="stepNumberContainer">
-          <div class="number" [routerLink]="['/select-plan']" [routerLinkActive]="'activeNum'">2</div>
-          <div class="stepWord">
-            <p class="stepNumber">Step 2</p>
-            <h3>Select plan</h3>
-          </div>
-        </div>
-        <div class="stepNumberContainer">
-          <div class="number" routerLink="/select-plan" routerLinkActive="activeNum">3</div>
-          <div class="stepWord">
-            <p class="stepNumber">Step 3</p>
-            <h3>Add-ons</h3>
-          </div>
-        </div>
-        <div class="stepNumberContainer">
-          <div class="number" routerLink="/select-plan" routerLinkActive="activeNum">4</div>
-          <div class="stepWord">
-            <p class="stepNumber">Step 4</p>
-            <h3>Summary</h3>
-          </div>
+        <div class="stepWord">
+          <p class="stepNumber">Step 1</p>
+          <h3>Your info</h3>
         </div>
       </div>
+      <div class="stepNumberContainer">
+        <div
+          class="number"
+          [routerLink]="['/select-plan']"
+          [routerLinkActive]="'activeNum'"
+        >
+          2
+        </div>
+        <div class="stepWord">
+          <p class="stepNumber">Step 2</p>
+          <h3>Select plan</h3>
+        </div>
+      </div>
+      <div class="stepNumberContainer">
+        <div
+          class="number"
+          routerLink="/select-plan"
+          routerLinkActive="activeNum"
+        >
+          3
+        </div>
+        <div class="stepWord">
+          <p class="stepNumber">Step 3</p>
+          <h3>Add-ons</h3>
+        </div>
+      </div>
+      <div class="stepNumberContainer">
+        <div
+          class="number"
+          routerLink="/select-plan"
+          routerLinkActive="activeNum"
+        >
+          4
+        </div>
+        <div class="stepWord">
+          <p class="stepNumber">Step 4</p>
+          <h3>Summary</h3>
+        </div>
+      </div>
+    </div>
+    <div class="content-container">
       <router-outlet></router-outlet>
     </div>
   </div>
-  
-
+</div>
